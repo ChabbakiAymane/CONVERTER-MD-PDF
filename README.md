@@ -65,7 +65,7 @@ Segui questi passi nell'interfaccia grafica:
 
 ---
 
-Nella cartella *exe* vi è l'eseguibile già compilato ed pronto per l'utilizzo. 
+Nella cartella [*exe*](https://github.com/ChabbakiAymane/CONVERTER-MD-PDF/tree/main/exe) vi è l'eseguibile già compilato ed pronto per l'utilizzo. 
 
 ## **Note**
 
