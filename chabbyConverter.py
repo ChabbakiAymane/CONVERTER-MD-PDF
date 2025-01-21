@@ -21,11 +21,11 @@ def update_status(message):
 
 # Funzione per selezionare il file .md
 def select_md_file():
-    md_file_path.set(filedialog.askopenfilename(filetypes=[("Markdown files", "*.md")]))
+    md_file_path.set(filedialog.askopenfilename(filetypes=[("File Markdown", "*.md")]))
     
 # Funzione per selezionare il percorso di salvataggio del file .pdf
 def select_pdf_save_path():
-    pdf_save_path.set(filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("PDF files", "*.pdf")]))
+    pdf_save_path.set(filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("File PDF", "*.pdf")]))
     
 # Funzione per convertire il file .md in .pdf
 def convert_md_to_pdf():
@@ -71,13 +71,13 @@ config = pdfkit.configuration(wkhtmltopdf='C:\\Program Files\\wkhtmltopdf\\bin\\
 
 # Creazione dei widget
 convert_label = tkinter.Label(frame, text="CONVERCHABBY", bg='#333333', fg="#FF3399", font=("Arial", 30))
-pathConvert_label = tkinter.Label(frame, text="Path File to Convert", bg='#333333', fg="#FFFFFF", font=("Arial", 16))
+pathConvert_label = tkinter.Label(frame, text="Percorso del file da convertire", bg='#333333', fg="#FFFFFF", font=("Arial", 16))
 pathConvert_entry = tkinter.Entry(frame, textvariable=md_file_path, font=("Arial", 16))
-pathConvert_button = tkinter.Button(frame, text="Browse", command=select_md_file, bg="#FF3399", fg="#FFFFFF", font=("Arial", 12))
-pathSave_label = tkinter.Label(frame, text="Path File to Save", bg='#333333', fg="#FFFFFF", font=("Arial", 16))
+pathConvert_button = tkinter.Button(frame, text="Sfoglia", command=select_md_file, bg="#FF3399", fg="#FFFFFF", font=("Arial", 12))
+pathSave_label = tkinter.Label(frame, text="Percorso di salvataggio del file", bg='#333333', fg="#FFFFFF", font=("Arial", 16))
 pathSave_entry = tkinter.Entry(frame, textvariable=pdf_save_path, font=("Arial", 16))
-pathSave_button = tkinter.Button(frame, text="Browse", command=select_pdf_save_path, bg="#FF3399", fg="#FFFFFF", font=("Arial", 12))
-convert_button = tkinter.Button(frame, text="CONVERT", command=convert_md_to_pdf_threaded, bg="#FF3399", fg="#FFFFFF", font=("Arial", 16))
+pathSave_button = tkinter.Button(frame, text="Sfoglia", command=select_pdf_save_path, bg="#FF3399", fg="#FFFFFF", font=("Arial", 12))
+convert_button = tkinter.Button(frame, text="CONVERTI", command=convert_md_to_pdf_threaded, bg="#FF3399", fg="#FFFFFF", font=("Arial", 16))
 status_label = tkinter.Label(frame, text="", bg='#333333', fg="#FFFFFF", font=("Arial", 12))
 
 # Posizionamento dei widget
