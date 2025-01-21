@@ -63,6 +63,10 @@ Segui questi passi nell'interfaccia grafica:
 
 - Clicca su *CONVERT* per avviare la conversione.
 
+---
+
+Nella cartella *exe* vi è l'eseguibile già compilato ed pronto per l'utilizzo. 
+
 ## **Note**
 
 Assicurati che il file *.md* sia valido e che il percorso di salvataggio abbia i permessi necessari.
